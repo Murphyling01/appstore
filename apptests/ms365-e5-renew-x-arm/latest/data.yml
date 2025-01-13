@@ -14,11 +14,11 @@ additionalProperties:
       labelEn: Time zone
       labelZh: 时区
       required: true
-    - default: password  
-      envKey: e5_ADMIN_PASSWORD  
-      labelEn: Admin Password  
-      labelZh: 管理员密码  
-      random: true  
-      required: true  
-      rule: paramComplexity  
-      type: password 
+    - default: password
+      envKey: e5_ADMIN_PASSWORD
+      labelEn: Admin Password
+      labelZh: 管理员密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password

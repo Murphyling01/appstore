@@ -14,6 +14,30 @@ additionalProperties:
       labelEn: Time zone
       labelZh: 时区
       required: true
+    - default: 123456@163.com
+      envKey: e5_Sender
+      labelEn: email sender
+      labelZh: 发送邮件的邮箱
+      random: false
+      required: true
+      rule: paramComplexity
+      type: text
+    - default: password
+      envKey: e5_Sender_PASSWORD
+      labelEn: Sender Password
+      labelZh: 发送邮箱的授权码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: 789456@qq.com
+      envKey: e5_Receiver
+      labelEn: email receiver
+      labelZh: 接收邮件的邮箱
+      random: false
+      required: true
+      rule: paramComplexity
+      type: text
     - default: password
       envKey: e5_ADMIN_PASSWORD
       labelEn: Admin Password

@@ -8,9 +8,9 @@ services:
       - "${PANEL_APP_PORT_HTTP}:1066"
     environment:
       - TZ=${TIME_ZONE}
-      - sender=${TIME_ZONE}
-      - pwd=${TIME_ZONE}
-      - receiver=${TIME_ZONE}
+      - sender=${e5_Sender}
+      - pwd=${e5_Sender_PASSWORD}
+      - receiver=${e5_Receiver}
       - adminpwd=${e5_ADMIN_PASSWORD}
     image: hanhongyong/ms365-e5-renew-x:arm64v8
     labels:  

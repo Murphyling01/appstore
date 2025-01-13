@@ -11,7 +11,7 @@ services:
       - sender=${TIME_ZONE}
       - pwd=${TIME_ZONE}
       - receiver=${TIME_ZONE}
-      - adminpwd=${TIME_ZONE}
+      - adminpwd=${e5_ADMIN_PASSWORD}
     image: hanhongyong/ms365-e5-renew-x:arm64v8
     labels:  
       createdBy: "Apps"

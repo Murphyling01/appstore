@@ -1,17 +1,18 @@
 services:
-  ms365-e5-renew-x:
+  ms365-e5-renew-x-arm64v8:
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
       - 1panel-network
     ports:
       - "${PANEL_APP_PORT_HTTP}:1066"
-    volumes:
-      - ./Deploy:/app/Deploy
-      - ./appdata:/app/appdata
     environment:
       - TZ=${TIME_ZONE}
-    image: hanhongyong/ms365-e5-renew-x:latest
+      - sender=${TIME_ZONE}
+      - pwd=${TIME_ZONE}
+      - receiver=${TIME_ZONE}
+      - adminpwd=${TIME_ZONE}
+    image: hanhongyong/ms365-e5-renew-x:arm64v8
     labels:  
       createdBy: "Apps"
 

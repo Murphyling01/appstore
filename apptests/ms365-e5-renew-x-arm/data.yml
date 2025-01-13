@@ -1,15 +1,15 @@
-name: Microsoft 365 E5 Renew X
+name: Microsoft 365 E5 Renew X arm64v8
 tags:
   - 工具
-title: Docker 版本的 Microsoft 365 E5 调用 API 续订服务
-description: Docker 版本的 Microsoft 365 E5 调用 API 续订服务
+title: Docker 版本的 Microsoft 365 E5 arm64v8调用 API 续订服务
+description: Docker 版本的 Microsoft 365 E5 arm64v8调用 API 续订服务
 additionalProperties:
-  key: ms365-e5-renew-x
-  name: Microsoft 365 E5 Renew X
+  key: ms365-e5-renew-x-arm64v8
+  name: Microsoft 365 E5 Renew X arm64v8
   tags:
     - Tool
-  shortDescZh: Docker 版本的 Microsoft 365 E5 调用 API 续订服务
-  shortDescEn: Docker version of Microsoft 365 E5 calls API renewal service
+  shortDescZh: Docker 版本的 Microsoft 365 E5 arm64v8调用 API 续订服务
+  shortDescEn: Docker version of Microsoft 365 E5 arm64v8 calls API renewal service
   type: tool
   crossVersionUpdate: true
   limit: 0

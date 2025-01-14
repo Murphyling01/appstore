@@ -7,15 +7,18 @@ services:
     ports:
       - "${PANEL_APP_PORT_HTTP}:1066"
     environment:
+      - LANG=C.UTF-8
       - TZ=${TIME_ZONE}
       - sender=${e5_Sender}
       - pwd=${e5_Sender_PASSWORD}
       - receiver=${e5_Receiver}
       - adminpwd=${e5_ADMIN_PASSWORD}
+    volumes:
+      - ./data/:/app/
+      - ./EXAccount.csv:/app/appdata/DataBase/EXAccount.csv
     image: hanhongyong/ms365-e5-renew-x:arm64v8
     labels:  
       createdBy: "Apps"
-
 networks:  
   1panel-network:  
     external: true
